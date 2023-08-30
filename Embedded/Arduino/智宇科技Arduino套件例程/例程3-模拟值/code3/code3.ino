@@ -12,9 +12,9 @@ void setup()
 void loop()
 {
   digitalWrite(ledpin,HIGH);//拉高端口13，LED点亮
-  delay(50);//延时0.05秒
+  delay(500);//延时0.05秒
   digitalWrite(ledpin,LOW);//拉低端口13，关闭LED
-  delay(50);//延时0.05 秒
+  delay(500);//延时0.05 秒
   val=analogRead(potpin);//读取A0口的电压值并赋值到val
   Serial.println(val);//串口发送val值
 }
